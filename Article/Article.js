@@ -151,15 +151,15 @@ function createArticle (title, date, firstParagraph, secondParagraph, thirdParag
     // p2.classList.toggle('article-open')
     // p3.classList.toggle('article-open')
   })
-  console.log('article', article)
+  // console.log('article', article)
   return article
   
 }
 const articles = document.querySelector('.articles')
-console.log('articles',  articles)
+// console.log('articles',  articles)
 data.forEach(anything => {
   // console.log(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph)
   articles.appendChild(createArticle(anything.title, anything.date, anything.firstParagraph, anything.secondParagraph, anything.thirdParagraph))
 })
 
-console.log('data', data)
+// console.log('data', data)

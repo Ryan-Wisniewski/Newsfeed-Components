@@ -146,16 +146,17 @@ function createArticle (title, date, firstParagraph, secondParagraph, thirdParag
   span.textContent = 'expand'
 
   //button
-  // span.addEventListenet('click', event => {
-
-  // })
+  span.addEventListener('click', event=> {
+    article.classList.toggle('article-open')
+    // p2.classList.toggle('article-open')
+    // p3.classList.toggle('article-open')
+  })
   console.log('article', article)
   return article
   
 }
 const articles = document.querySelector('.articles')
 console.log('articles',  articles)
-
 data.forEach(anything => {
   // console.log(data.title, data.date, data.firstParagraph, data.secondParagraph, data.thirdParagraph)
   articles.appendChild(createArticle(anything.title, anything.date, anything.firstParagraph, anything.secondParagraph, anything.thirdParagraph))
